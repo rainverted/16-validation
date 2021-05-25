@@ -15,3 +15,7 @@ test('adds 0.1 + 0.2 to equal 0.3', () => {
 test('adds 0.2 + 0.2 to equal 0.4', () => {
     expect(sum(0.2, 0.2)).toBeCloseTo(0.4, 5);
 });
+
+test('string is not allowed', () => {
+    expect(sum('a', 8)).toBeFalsy();
+});
